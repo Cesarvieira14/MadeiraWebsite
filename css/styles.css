@@ -1,11 +1,40 @@
 /* MOBILE AND GLOBAL STYLES */
 
+
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
 body {
-  background: #fcc;
+  font-family: 'Courier New', Courier, monospace;
+  background: rgb(3, 43, 19);
+
 } 
+
+header {
+  
+  background-position: right;
+  padding: 2vw;
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 1vw
+}
+
+nav {
+  display: flex;
+	flex-direction: row;
+  border: black;
+  border-color: black;
+  border-radius: 2cm;
+	background-color: #050;
+	flex-basis: 15vw;
+	flex-shrink: 0;
+}
+
+nav a {
+	color: #afa;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	transition: background-color 0.5s;
+}
 
 
 
@@ -29,6 +58,8 @@ body {
   /* applies to screens wider than 999px */
 
   body {
-    background: #ccf;
+    background: url(Bkg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   } 
 }
