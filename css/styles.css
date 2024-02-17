@@ -5,7 +5,7 @@
 /* and above unless overwritten below */
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: rgb(3, 43, 19);
 
 } 
@@ -15,7 +15,7 @@ header {
   background-position: right;
   padding: 2vw;
   background-color: rgba(0, 0, 0, 0.336);
-  border-radius: 1vw
+  border-radius: 0.5vw
 }
 
 nav {
@@ -36,6 +36,16 @@ nav a {
 	transition: background-color 0.5s;
 }
 
+.footer { 
+  background-color: rgba(0, 0, 0, 0.336);
+  width: 100%;
+  text-align: center;
+  color: antiquewhite;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  z-index: 10;
+}
 
 
 /* TABLET STYLES */
