@@ -6,10 +6,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: rgb(3, 43, 19);
-  background: url(Bkg1.jpg);
+  background: #17351d;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin: auto;
 } 
 
@@ -18,7 +17,7 @@ header {
   align-items: center;
   padding: 1vw;
   background-position: right;
-  background-color: #17351dfb;
+  background-color: #17351de1;
 }
 
 .logo {
@@ -44,16 +43,8 @@ nav a:hover {
   color: #17351d;
   background-color: #afa; 
 }
-.footer { 
-  background-color: rgba(0, 0, 0, 0.336);
-  width: 100%;
-  text-align: center;
-  color: antiquewhite;
-  position: fixed; 
-  bottom: 0; 
-  left: 0; 
-  z-index: 10;
-}
+
+
 
 
 /* TABLET STYLES */
@@ -63,7 +54,7 @@ nav a:hover {
   /* applies to screens wider than 499px */
   
   body {
-    background: #cfc;
+    background: rgb(0, 83, 0);
   } 
 }
 
@@ -77,12 +68,50 @@ nav a:hover {
 
 
 
+  header {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    background-position: right;
+    background-color: #17351d;
+  }
 
   body {
-
-
-    background: url(Bkg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #acacac;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
   } 
+  
+  .container {
+    max-width: auto; /* Adjust the maximum width as needed */
+    max-height: fit-content;
+    margin: auto; /* Center the container horizontally */
+    padding: 0px; /* Add some padding for spacing */
+    border-style: solid;
+    border-color: #17351d;
+    height: 700px;
+    overflow: hidden;
+  }
+  
+  .container img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline styles */
+    margin-top: 0px; /* Add some top margin for spacing */
+    align-content: center;
+    
+  }
+
+  .footer { 
+    background-color: rgba(0, 0, 0, 0.336);
+    width: 100%;
+    text-align: center;
+    color: antiquewhite;
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+  }
+  
 }
