@@ -5,7 +5,7 @@
 /* and above unless overwritten below */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI';
   background: #17351d;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,6 +29,7 @@ nav {
   margin-left: auto;
   display: flex;
   flex-direction: row;
+  margin-right: 20px;
 }
 
 nav a {
@@ -69,6 +70,9 @@ nav a:hover {
 
 
   header {
+    position: fixed;
+    width: 100%;
+    padding-top: 70px;
     display: flex;
     align-items: center;
     padding: 1vw;
@@ -77,20 +81,21 @@ nav a:hover {
   }
 
   body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #acacac;
+  font-family: 'Segoe UI';
+  background: #ffffff;
   background-repeat: no-repeat;
   background-size: contain;
   margin: auto;
   } 
   
   .container {
+    padding-top: 120px;
     max-width: auto; /* Adjust the maximum width as needed */
     max-height: fit-content;
     margin: auto; /* Center the container horizontally */
-    padding: 0px; /* Add some padding for spacing */
     border-style: solid;
     border-color: #17351d;
+    background-color: #17351d;
     height: 700px;
     overflow: hidden;
   }
@@ -101,7 +106,6 @@ nav a:hover {
     display: block; /* Remove any default inline styles */
     margin-top: 0px; /* Add some top margin for spacing */
     align-content: center;
-    
   }
 
   .footer { 
