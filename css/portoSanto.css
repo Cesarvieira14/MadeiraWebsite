@@ -5,45 +5,13 @@
 /* and above unless overwritten below */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI';
   background: rgb(3, 43, 19);
   margin: auto;
 
 }  
   
-header div {
-    background-color: rgba(118, 105, 10, 0.299);
-    background-size: 100%;
-    background-position: right;
-    padding: 0.2vw;
-}
-  
-  nav {
-    display: flex;
-      flex-direction: row;
-      background-color: rgba(2, 12, 2, 0.308);
-      flex-basis: 15vw;
-      flex-shrink: 0;
-      ;
-  }
-  
-  nav a {
-      color: rgb(255, 255, 255);
-      padding: 0.25em 0.5em;
-      text-decoration: none;
-      transition: background-color 0.5s;
-  }
-  
-  .footer { 
-    background-color: rgba(0, 0, 0, 0.336);
-    width: 100%;
-    text-align: center;
-    color: antiquewhite;
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
-  }
+
   
   
   /* TABLET STYLES */
@@ -65,9 +33,70 @@ header div {
   
     /* applies to screens wider than 999px */
   
+    .bar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-block:1vw;
+    background-position: right;
+    background-color: #17351d9a;
+
+  }
+
     body {
-      background: url(Bkg2.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+      font-family: 'Segoe UI';
+      background: rgb(147, 164, 112);
+      margin: auto;
     } 
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1vw;
+      background-position: right;
+      background-color: #17351dd6;
+    }
+
+  .logo {
+    margin-left: 30px;
+    max-width: 300px;
+  }
+  
+  
+    
+    nav {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+    
+nav a {
+	color: #afa;
+	padding: 0.25em 1.25em;
+	text-decoration: none;
+	transition: background-color 0.5s;
+  font-size: 17px;
+  border-radius: 1vw;
+}
+    
+nav a:hover {
+  color: #17351d;
+  background-color: #afa; 
+}
+    
+    .footer { 
+      background-color: rgba(0, 0, 0, 0.336);
+      width: 100%;
+      text-align: center;
+      color: antiquewhite;
+      position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      z-index: 10;
+    }
+
+
   }
