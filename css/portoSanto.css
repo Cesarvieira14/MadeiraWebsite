@@ -40,7 +40,7 @@ body {
     align-items: center;
     padding-block:1vw;
     background-position: right;
-    background-color: #17351d9a;
+    background-color: #0000009a;
 
   }
 
@@ -53,11 +53,16 @@ body {
     } 
 
     header {
-      display: flex;
-      align-items: center;
-      padding: 1vw;
-      background-position: right;
-      background-color: #17351dd6;
+      font-size: 2em;
+	  min-height: 100vh;
+	  background-image: url(Bkg2.jpg);
+	  background-size: cover;
+	  text-align: center;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  box-sizing: border-box;
+    
     }
 
   .logo {
@@ -92,7 +97,6 @@ nav a:hover {
       width: 100%;
       text-align: center;
       color: antiquewhite;
-      position: fixed; 
       bottom: 0; 
       left: 0; 
       z-index: 10;
