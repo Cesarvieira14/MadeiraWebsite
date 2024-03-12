@@ -59,7 +59,7 @@ body {
 
     header {
 	  min-height: 100vh;
-	  background-image: url(Bkg2.jpg);
+	  background-image: url("/images/Bkg2.jpg");
 	  background-size: cover;
 	  text-align: center;
 	  display: flex;

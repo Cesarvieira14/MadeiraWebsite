@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url(Bkg1.jpg);
+  background: url("/images/Bkg1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   margin: auto;
@@ -80,7 +80,7 @@ nav a:hover {
   body {
 
 
-    background: url(Bkg1.jpg);
+    background: url("/images/Bkg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   } 
