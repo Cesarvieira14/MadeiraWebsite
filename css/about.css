@@ -15,13 +15,71 @@ body {
   display: flex;
   flex-direction: column;
   background: #fcc;
-  align-items: center;
   height: 100vh;
+  width: 100%;
+  align-content: center;
 }
 
+main {
+  flex-grow: 1;
+}
+
+/**
+Trying to implement menu toggler
+
+
+
+**/
+#menuToggler {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 3em;
+  text-align: right;
+  line-height: 1em;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: transform 0.4s, opacity 0.6s;
+}
+
+nav.open {
+  transition: transform 0.4s, opacity 0.2s;
+  transform: none;
+  opacity: 1;
+}
+
+nav a {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/**Trying to implement menu toggler**/
 
 h1 {
   text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin: 20px;
 }
 
 .footer {
@@ -29,9 +87,7 @@ h1 {
   width: 100%;
   text-align: center;
   color: antiquewhite;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+
 }
 
 
@@ -45,6 +101,25 @@ h1 {
   body {
     background: #cfc;
   }
+
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: static;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1.3em;
+    flex-grow: 0;
+  }
 }
 
 
@@ -57,5 +132,24 @@ h1 {
 
   body {
     background: #ccf;
+  }
+
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: static;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1.3em;
+    flex-grow: 0;
   }
 }
