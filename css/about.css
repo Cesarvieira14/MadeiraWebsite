@@ -14,14 +14,27 @@
 body {
   display: flex;
   flex-direction: column;
-  background: #fcc;
+  background: rgb(102, 73, 73);
   height: 100vh;
   width: 100%;
   align-content: center;
+  margin: 0;
 }
 
 main {
   flex-grow: 1;
+}
+
+.logoMobile {
+  display: block;
+  height: 100px;
+
+}
+
+header {
+  background-color: #17351d;
+  padding: 8px 0;
+  justify-content: center;
 }
 
 /**
@@ -31,16 +44,26 @@ Trying to implement menu toggler
 
 **/
 #menuToggler {
+  font-family: monospace;
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.796);
   color: white;
   font-size: 3em;
   text-align: right;
   line-height: 1em;
   padding: 0 1rem;
-  z-index: 1;
+  z-index: 2;
+}
+
+
+.container {
+  display: none;
+}
+
+.logo {
+  display: none;
 }
 
 nav {
@@ -54,6 +77,11 @@ nav {
   opacity: 0;
   transform: translateX(100vw);
   transition: transform 0.4s, opacity 0.6s;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
 }
 
 nav.open {
@@ -79,8 +107,14 @@ h1 {
 
 p {
   text-align: justify;
+  padding: 20px;
+}
+
+.container {
   margin: 20px;
 }
+
+
 
 .footer {
   background-color: rgba(0, 0, 0, 0.336);
@@ -99,7 +133,21 @@ p {
   /* applies to screens wider than 499px */
 
   body {
-    background: #cfc;
+    background: rgb(2, 75, 2);
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 30px;
+    width: 250px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #0f1110e1;
+    justify-content: space-between;
+    padding-block: 1vw;
   }
 
   #menuToggler {
@@ -113,12 +161,21 @@ p {
     opacity: 1;
     height: auto;
     position: static;
+    width: auto;
     justify-content: center;
+    background-color: #ffffff00;
   }
 
   nav a {
-    font-size: 1.3em;
+    padding: 0.15em 1.25em;
+    border-radius: 5vw;
+    transition: background-color 0.5s;
+    font-size: 14px;
     flex-grow: 0;
+  }
+
+  .logoMobile {
+    display: none;
   }
 }
 
@@ -131,25 +188,55 @@ p {
   /* applies to screens wider than 999px */
 
   body {
-    background: #ccf;
+    background: rgb(255, 255, 255);
   }
 
   #menuToggler {
     display: none;
   }
 
+  .logoMobile {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #0f1110e1;
+    justify-content: space-between;
+    padding-block: 1vw;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 30px;
+    max-width: 300px;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
-    transform: none;
     opacity: 1;
-    height: auto;
+    width: auto;
     position: static;
-    justify-content: center;
+    background-color: #ffffff00;
   }
 
   nav a {
-    font-size: 1.3em;
+    padding: 0.25em 1.25em;
+    border-radius: 5vw;
+    transition: background-color 0.5s;
+    font-size: 17px;
     flex-grow: 0;
   }
+
+  nav a:hover {
+    color: #17351d;
+    background-color: rgba(255, 230, 0, 0.63);
+  }
+
 }
