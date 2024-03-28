@@ -4,59 +4,175 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI';
-  background: #17351d;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
-} 
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(211, 185, 185);
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.logoMobile {
+  display: block;
+  height: 100px;
+
+}
 
 header {
-  display: flex;
-  align-items: center;
-  padding: 1vw;
-  background-position: right;
-  background-color: #0f1110e1;
+  background-color: #17351d;
+  padding: 8px 0;
+  justify-content: center;
+}
+
+#menuToggler {
+  font-family: monospace;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.796);
+  color: white;
+  font-size: 3em;
+  text-align: right;
+  line-height: 1em;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.container {
+  display: none;
 }
 
 .logo {
-  margin-left: 30px;
-  max-width: 300px;
+  display: none;
 }
 
 nav {
-  margin-left: auto;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   display: flex;
-  flex-direction: row;
-  margin-right: 20px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: transform 0.4s, opacity 0.6s;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+}
+
+nav.open {
+  transition: transform 0.4s, opacity 0.2s;
+  transform: none;
+  opacity: 1;
 }
 
 nav a {
-	color: #afa;
-	padding: 0.25em 1.25em;
-	text-decoration: none;
-	transition: background-color 0.5s;
-  font-size: 17px;
-  border-radius: 1vw;
-}
-nav a:hover {
-  color: #17351d;
-  background-color: #afa; 
+  font-size: 2em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
 }
 
+h1 {
+  text-align: center;
+  padding: 20px;
+}
 
+h2 {
+  text-align: center;
+}
 
+p {
+  text-align: justify;
+  padding: 20px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.336);
+  width: 100%;
+  text-align: center;
+  color: antiquewhite;
+
+}
 
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
-    background: rgb(0, 83, 0);
-  } 
+    background: rgb(107, 146, 107);
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 30px;
+    width: 250px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #0f1110e1;
+    justify-content: space-between;
+    padding-block: 1vw;
+  }
+
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: static;
+    width: auto;
+    justify-content: center;
+    background-color: #ffffff00;
+  }
+
+  nav a {
+    padding: 0.15em 1.25em;
+    border-radius: 5vw;
+    transition: background-color 0.5s;
+    font-size: 14px;
+    flex-grow: 0;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+
+
 }
 
 
@@ -67,55 +183,80 @@ nav a:hover {
 
   /* applies to screens wider than 999px */
 
-
-
-  header {
-    position: fixed;
-    width: 100%;
-    padding-top: 70px;
-    display: flex;
-    align-items: center;
-    padding: 1vw;
-    background-position: right;
-    background-color: #17351d;
+  body {
+    background: rgb(255, 255, 255);
   }
 
-  body {
-  font-family: 'Segoe UI';
-  background: #ffffff;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
-  } 
-  
+  #menuToggler {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #17351d;
+    justify-content: space-between;
+    padding-block: 1vw;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 30px;
+    max-width: 300px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    width: auto;
+    position: static;
+    background-color: #ffffff00;
+  }
+
+  nav a {
+    padding: 0.25em 1.25em;
+    border-radius: 5vw;
+    transition: background-color 0.5s;
+    font-size: 17px;
+    flex-grow: 0;
+  }
+
+  nav a:hover {
+    color: #17351d;
+    background-color: rgba(255, 230, 0, 0.63);
+  }
+
+
   .container {
     padding-top: 120px;
-    max-width: auto; /* Adjust the maximum width as needed */
+    max-width: auto;
+    /* Adjust the maximum width as needed */
     max-height: fit-content;
-    margin: auto; /* Center the container horizontally */
+    margin: auto;
+    /* Center the container horizontally */
     border-style: solid;
     border-color: #17351d;
     background-color: #17351d;
     height: 700px;
     overflow: hidden;
   }
-  
+
   .container img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline styles */
-    margin-top: 0px; /* Add some top margin for spacing */
+    width: 100%;
+    /* Ensure the image fills the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove any default inline styles */
+    margin-top: 0px;
+    /* Add some top margin for spacing */
     align-content: center;
   }
 
-  .footer { 
-    background-color: rgba(0, 0, 0, 0.336);
-    width: 100%;
-    text-align: center;
-    color: antiquewhite;
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
-  }
-  
+
 }

@@ -14,7 +14,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background: rgb(102, 73, 73);
+  background: rgb(211, 185, 185);
   height: 100vh;
   width: 100%;
   align-content: center;
@@ -102,6 +102,11 @@ nav a {
 /**Trying to implement menu toggler**/
 
 h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
   text-align: center;
 }
 
