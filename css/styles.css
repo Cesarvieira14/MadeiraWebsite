@@ -52,10 +52,6 @@ header {
   z-index: 2;
 }
 
-.container {
-  display: none;
-}
-
 .logo {
   display: none;
 }
