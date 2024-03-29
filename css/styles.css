@@ -159,6 +159,26 @@ p {
 
 }
 
+.quoteContainer {
+  padding: 50px;
+  font-size: 20px;
+  background-color: #86b568;
+  box-shadow: 10px 13px 15px 5px #17351d;
+  margin: 30px;
+
+}
+
+.quoteContainer h2 {
+  font-family: "Bilbo Swash Caps", cursive;
+}
+
+.div1 h2 {
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-self: flex-start;
+  font-size: 70px;
+}
+
 .footer {
   background-color: rgba(0, 0, 0, 0.336);
   width: 100%;
@@ -166,6 +186,10 @@ p {
   color: antiquewhite;
 
 }
+
+
+
+
 
 /* TABLET STYLES */
 
@@ -238,7 +262,7 @@ p {
   }
 
   main {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0d5;
     /* Adjust the color as needed */
   }
 
@@ -251,7 +275,7 @@ p {
     align-items: center;
     background-color: #17351d;
     justify-content: space-between;
-    padding-block: 1vw;
+    padding-block: 12px;
   }
 
   .logoMobile {
@@ -340,23 +364,42 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    border-radius: 53px;
-    background: linear-gradient(145deg, #17351d, #4c663bd3);
-    box-shadow: 27px 27px 55px #222d1a,
-      -27px -27px 55px #86b568;
 
   }
+
 
   .text-overlay h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 70px;
     color: #ffffff;
+    animation: text-pop-up-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
   }
 
-  .text-overlay p {
-    font-size: 16px;
+  @keyframes text-pop-up-bottom {
+    0% {
+      transform: translateY(0);
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+
+    100% {
+      transform: translateY(20px);
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000, 0 6px 0 #000000, 0 7px 0 #000000, 0 8px 0 #000000, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
   }
+
+  .quoteContainer {
+    padding: 90px;
+    font-size: 25px;
+    background-color: #86b568;
+    box-shadow: 10px 13px 15px 5px #17351d;
+    margin: 30px 30px 60px 30px;
+
+  }
+
 
   .parent {
     display: grid;
@@ -364,6 +407,7 @@ p {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin: 50px;
   }
 
   .div1 {
