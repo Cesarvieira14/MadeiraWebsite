@@ -28,6 +28,7 @@ main {
   padding-top: 116px;
 }
 
+
 .logoMobile {
   display: block;
   height: 100px;
@@ -128,6 +129,7 @@ p {
   /* Adjust according to your header height */
   overflow: hidden;
   /* Ensure the image doesn't overflow the container */
+  border-radius: 50px;
 }
 
 .container img {
@@ -214,7 +216,12 @@ p {
   /* applies to screens wider than 999px */
 
   body {
-    background: rgb(255, 255, 255);
+    background: #17351d;
+  }
+
+  main {
+    background-color: #f0f0f0;
+    /* Adjust the color as needed */
   }
 
   #menuToggler {
@@ -233,10 +240,11 @@ p {
     display: none;
   }
 
+
   .logo {
     display: flex;
     margin-left: 30px;
-    max-width: 300px;
+    min-width: 300px;
   }
 
   nav {
@@ -262,33 +270,27 @@ p {
   }
 
   .container {
-    display: none;
-  }
-
-  .container {
-    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: auto;
-    /* Adjust the maximum width as needed */
-    max-height: fit-content;
-    margin: auto;
-    /* Center the container horizontally */
-    border-style: solid;
-    border-color: #17351d;
-    background-color: #17351d;
-    height: 700px;
-    overflow: hidden;
+    height: calc(100vh-121px);
   }
 
   .container img {
-    width: 100%;
-    /* Ensure the image fills the container */
-    height: auto;
-    /* Maintain aspect ratio */
-    display: block;
-    /* Remove any default inline styles */
-    margin-top: 0px;
-    /* Add some top margin for spacing */
-    align-content: center;
+    object-fit: fill;
+  }
+
+  .BigImage {
+    display: flex;
+    ;
+    /* Hide the MobileImage on screens wider than 1000px */
+  }
+
+  .MobileImage {
+    display: none !important;
+    ;
+    /* Hide the MobileImage on screens wider than 1000px */
   }
 
 
