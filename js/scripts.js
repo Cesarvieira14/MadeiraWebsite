@@ -21,5 +21,7 @@ function toggleHeaderVisibility() {
     }
 }
 
-// Add event listener for scroll event
+//event listener for scroll event
 window.addEventListener('scroll', toggleHeaderVisibility);
+
+
