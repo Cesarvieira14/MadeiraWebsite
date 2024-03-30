@@ -29,6 +29,9 @@ main {
   padding-top: 116px;
 }
 
+.disable-scroll {
+  overflow: hidden;
+}
 
 .logoMobile {
   display: block;
@@ -110,12 +113,16 @@ nav.open {
 }
 
 nav a {
+  display: flex;
+  justify-content: center;
   font-size: 2em;
   text-decoration: none;
   padding: 0.5em 1em;
   color: white;
   text-align: center;
   flex-grow: 1;
+  align-items: center;
+  border: 1px solid #ffffff38;
 }
 
 .text-overlay {
@@ -150,6 +157,7 @@ p {
 }
 
 .container img {
+  scale: 1;
   min-width: 100%;
   /* Ensure the image doesn't exceed the container width */
   min-height: 100%;
@@ -160,7 +168,7 @@ p {
 }
 
 .quoteContainer {
-  padding: 50px;
+  padding: 30px;
   font-size: 20px;
   background-color: #86b568;
   box-shadow: 10px 13px 15px 5px #17351d;
@@ -172,11 +180,40 @@ p {
   font-family: "Bilbo Swash Caps", cursive;
 }
 
+.div1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 .div1 h2 {
   display: flex;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  align-self: flex-start;
-  font-size: 70px;
+  font-size: 30px;
+  text-decoration: underline dotted;
+}
+
+.div2 {
+  width: auto;
+  height: fit-content;
+  margin: 10px;
+
+}
+
+.div2 img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 14px;
+  filter: grayscale(100%);
+}
+
+.div3 h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.div3 p {
+  padding: 10px;
 }
 
 .footer {
@@ -247,6 +284,8 @@ p {
   .container {
     display: none;
   }
+
+
 }
 
 
@@ -304,6 +343,7 @@ p {
     transition: background-color 0.5s;
     font-size: 17px;
     flex-grow: 0;
+    border: 0px;
   }
 
   nav a:hover {
@@ -392,7 +432,7 @@ p {
   }
 
   .quoteContainer {
-    padding: 90px;
+    padding: 50px;
     font-size: 25px;
     background-color: #86b568;
     box-shadow: 10px 13px 15px 5px #17351d;
@@ -404,7 +444,7 @@ p {
   .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin: 50px;
@@ -412,14 +452,41 @@ p {
 
   .div1 {
     grid-area: 1 / 1 / 2 / 2;
+    margin-bottom: 0px;
   }
 
   .div2 {
+    display: flex;
     grid-area: 2 / 1 / 4 / 3;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+  }
+
+  .div2 img {
+    width: 100%;
+    /* Ensures the image fills its container */
+    height: auto;
+    /* Ensures the image maintains its aspect ratio */
+    border-radius: 14px;
+    filter: grayscale(100%);
+    object-fit: cover;
+    /* Scales the image while preserving its aspect ratio */
   }
 
   .div3 {
     grid-area: 2 / 3 / 4 / 5;
+  }
+
+  .div3 h3 {
+    padding-left: 20px;
+    text-decoration: solid;
+    font-size: 18px;
+
+  }
+
+  .div3 p {
+    font-size: 18px;
   }
 
 
