@@ -9,7 +9,10 @@ menuToggler.addEventListener('click', ev => {
     document.body.classList.toggle('disable-scroll');
 });
 
-/*
+//TODO Hidding the header(decide to use or not)
+/* 
+
+
 const header = document.querySelector('header');
 
 // Define the scroll threshold at which the header should disappear
