@@ -37,6 +37,30 @@ header {
   justify-content: center;
 }
 
+#target {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px)1fr);
+  gap: 2rem;
+  padding: 5rem;
+}
+
+article {
+  background: rgb(112, 106, 106);
+  display: grid;
+  grid-template-columns: 200px auto;
+  outline: 9px groove #000000;
+  outline-offset: 6px;
+}
+
+article div {
+  padding: 1 rem;
+}
+
+img {
+  width: 100%;
+}
+
+
 /**
 Trying to implement menu toggler
 
