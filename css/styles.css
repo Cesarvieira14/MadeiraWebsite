@@ -64,6 +64,7 @@ p {
   font-family: "Bilbo Swash Caps", cursive;
 }
 
+
 .div1 {
   display: flex;
   justify-content: center;
@@ -101,6 +102,26 @@ p {
 }
 
 
+.div5 img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 14px;
+  filter: grayscale(100%);
+}
+
+.div6 img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 14px;
+  filter: grayscale(100%);
+}
+
+.div9 img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 14px;
+  filter: grayscale(100%);
+}
 
 
 
@@ -366,5 +387,55 @@ p {
     font-size: 18px;
   }
 
+  .Chapter2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 50px;
+  }
+
+  .div4 {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+
+  .div5 {
+    grid-area: 1 / 3 / 3 / 5;
+  }
+
+  .Chapter3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 50px;
+  }
+
+  .div6 {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+
+  .div7 {
+    grid-area: 1 / 3 / 3 / 5;
+  }
+
+  .Chapter4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 50px;
+  }
+
+  .div8 {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+
+  .div9 {
+    grid-area: 1 / 3 / 3 / 5;
+  }
 
 }
