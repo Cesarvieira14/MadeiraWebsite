@@ -89,7 +89,6 @@ p {
   width: 100%;
   height: fit-content;
   border-radius: 14px;
-  filter: grayscale(100%);
 }
 
 .div3 h3 {
@@ -106,14 +105,12 @@ p {
   width: 100%;
   height: fit-content;
   border-radius: 14px;
-  filter: grayscale(100%);
 }
 
 .div6 img {
   width: 100%;
   height: fit-content;
   border-radius: 14px;
-  filter: grayscale(100%);
 }
 
 .div9 img {
@@ -377,7 +374,7 @@ p {
   }
 
   .div3 h3 {
-    padding-left: 20px;
+    padding-left: 10px;
     text-decoration: solid;
     font-size: 18px;
 
@@ -394,6 +391,11 @@ p {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin: 50px;
+  }
+
+  .Chapter2 h3 {
+    padding-left: 20px;
+
   }
 
   .div4 {
@@ -413,6 +415,10 @@ p {
     margin: 50px;
   }
 
+  .Chapter3 h3 {
+    padding-left: 20px;
+  }
+
   .div6 {
     grid-area: 1 / 1 / 3 / 3;
   }
@@ -429,6 +435,11 @@ p {
     grid-row-gap: 0px;
     margin: 50px;
   }
+
+  .Chapter4 h3 {
+    padding-left: 20px;
+  }
+
 
   .div8 {
     grid-area: 1 / 1 / 3 / 3;
