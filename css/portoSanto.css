@@ -4,21 +4,119 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI';
-  scroll-behavior: smooth;
+.BigImage {
+  display: none;
 }
 
 
+.text-overlay {
+  display: none;
+}
 
-body {
-  background: rgb(3, 43, 19);
-  margin: auto;
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 116px);
+  /* Adjust according to your header height */
+  overflow: hidden;
+  /* Ensure the image doesn't overflow the container */
+  margin-bottom: 50px;
+
+}
+
+.container img {
+  scale: 1;
+  min-width: 100%;
+  /* Ensure the image doesn't exceed the container width */
+  min-height: 100%;
+  /* Ensure the image doesn't exceed the container height */
+  object-fit: fill;
+  /* Maintain aspect ratio while fitting inside the container */
+
+}
+
+.quoteContainer {
+  padding: 30px;
+  font-size: 20px;
+  background-color: #86b568;
+  box-shadow: 10px 13px 15px 5px #17351d;
+  margin: 30px;
+
+}
+
+.quoteContainer h2 {
+  font-family: "Bilbo Swash Caps", cursive;
+}
+
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.div1 h2 {
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  text-decoration: underline dotted;
+}
+
+.div2 {
+  width: auto;
+  height: fit-content;
+  margin: 10px;
+
+}
+
+.div2 img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 14px;
+}
+
+.div3 h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.div3 p {
+  padding: 10px;
+}
+
+
+.div5 img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 14px;
+}
+
+.div6 img {
+  width: 90%;
+  height: fit-content;
+  border-radius: 14px;
+}
+
+.div9 img {
+  width: 90%;
+  height: fit-content;
+  border-radius: 14px;
 }
 
 
@@ -26,13 +124,62 @@ body {
 
 /* TABLET STYLES */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
 
   /* applies to screens wider than 499px */
 
   body {
-    background: #cfc;
+    background: rgb(107, 146, 107);
   }
+
+  .logo {
+    display: flex;
+    margin-left: 30px;
+    width: 250px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #0f1110e1;
+    justify-content: space-between;
+    padding-block: 1vw;
+  }
+
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: static;
+    width: auto;
+    justify-content: center;
+    background-color: #ffffff00;
+  }
+
+  nav a {
+    padding: 0.15em 1.25em;
+    border-radius: 5vw;
+    transition: background-color 0.5s;
+    font-size: 14px;
+    flex-grow: 0;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+
+  .container {
+    display: none;
+  }
+
+
 }
 
 
@@ -43,94 +190,113 @@ body {
 
   /* applies to screens wider than 999px */
 
-  .bar {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    padding-block: 1vw;
-    background-position: right;
-    background-color: #0000009a;
-    z-index: 999;
-  }
-
-  .logo {
-    margin-left: 30px;
-    max-width: 300px;
-  }
-
   body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Segoe UI';
-    background: rgb(147, 164, 112);
-    margin: auto;
+    background: #17351d;
+  }
+
+  main {
+    background-color: #f0f0f0d5;
+    /* Adjust the color as needed */
+  }
+
+  #menuToggler {
+    display: none;
   }
 
   header {
-    min-height: 100vh;
-    background-image: url("/images/Bkg2.jpg");
-    background-size: cover;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    text-align: right;
-    border: 2px solid #292828;
-    /* Border style */
-    overflow: hidden;
+    align-items: center;
+    background-color: #1c1f1dc5;
+    justify-content: space-between;
+    padding-block: 12px;
   }
 
-  .header-content {
-    font-size: 2em;
-    text-align: center;
+  .logoMobile {
+    display: none;
+  }
+
+
+  .logo {
+    display: flex;
+    margin-left: 30px;
+    min-width: 300px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    width: auto;
+    position: static;
+    background-color: #ffffff00;
+  }
+
+  nav a {
+    padding: 0.25em 1.25em;
+    border-radius: 5vw;
+    transition: background-color 0.5s;
+    font-size: 17px;
+    flex-grow: 0;
+    border: 0px;
+  }
+
+  nav a:hover {
+    color: #000000;
+    background-color: rgba(180, 177, 0, 0.63);
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    height: calc(100vh-121px);
+  }
+
+  .container img {
+    object-fit: fill;
+  }
+
+  .BigImage {
+    display: flex;
+  }
+
+
+  .MobileImage {
+    display: none !important;
+  }
+
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-overlay {
+    /* Positioning */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(255, 230, 0, 0.836);
-    ;
-    /* Just for better visibility */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
     z-index: 1;
-  }
 
-
-  nav {
-    margin-left: auto;
+    /* Display & Box Model */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    /* Color */
+    color: #ffe600d5;
+
+    /* Text */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 32px;
+
   }
 
-  nav a {
-    color: rgb(252, 252, 252);
-    padding: 0.25em 1.25em;
-    text-decoration: none;
-    transition: background-color 0.5s;
-    font-size: 17px;
-    border-radius: 1vw;
-  }
-
-  nav a:hover {
-    color: #17351d;
-    background-color: rgba(255, 230, 0, 0.63);
-  }
-
-  .footer {
-    background-color: rgba(0, 0, 0, 0.336);
-    width: 100%;
-    text-align: center;
-    color: antiquewhite;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-  }
 
 
 }
