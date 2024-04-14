@@ -4,13 +4,21 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+body {
+  background-color: #f0f0f0d5;
+}
+
+main {
+  background-color: #fffde6d5;
+  /* Adjust the color as needed */
+}
+
 .intro-header {
   position: relative;
   color: #fff;
   justify-content: center;
   align-items: center;
-  height: 620px;
-  margin-bottom: 100px;
+  height: calc(100vh - 116px);
   display: flex;
   overflow: hidden;
 }
@@ -23,7 +31,7 @@
   height: 100%;
   width: 100%;
   z-index: 1;
-  background-color: rgba(244, 244, 244, 0.151);
+  background-color: rgba(244, 244, 244, 0);
 }
 
 .intro-header video {
@@ -38,25 +46,15 @@
   transform: translate(-50%, -50%);
 }
 
-.intro-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 70%;
-  max-width: 1140px;
-  margin-bottom: 20px;
-  z-index: 2;
-}
-
 .intro-text {
-  width: 80%;
+  width: 60%;
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
-  color: #17351d;
+  color: #ffffff;
+  background: #414141a8;
+  border-radius: 10px;
 }
 
 .heading-jumbo {
@@ -77,10 +75,26 @@
   z-index: 2;
 }
 
+.css-button-neumorphic {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  color: #585858;
+}
 
-
-.BigImage {
-  display: none;
+.css-button-neumorphic:active {
+  box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
 }
 
 
@@ -100,6 +114,11 @@ h2 {
 p {
   text-align: justify;
   padding: 20px;
+}
+
+#Activities {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -126,59 +145,33 @@ p {
 
 }
 
-.quoteContainer {
-  padding: 30px;
-  font-size: 20px;
-  background-color: #86b568;
-  box-shadow: 10px 13px 15px 5px #17351d;
-  margin: 30px;
-
-}
-
-.quoteContainer h2 {
-  font-family: "Bilbo Swash Caps", cursive;
-}
-
-.div1 {
+.ListActivities {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
-.div1 h2 {
-  display: flex;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 30px;
-  text-decoration: underline dotted;
+.ListActivities div {
+  text-align: justify;
+  padding: 20px;
+  max-width: 400px;
 }
 
-.div2 {
-  width: auto;
-  height: fit-content;
-  margin: 10px;
-
-}
-
-.div2 img {
+.activityImage {
   width: 100%;
-  height: fit-content;
-  border-radius: 14px;
-  filter: grayscale(100%);
 }
 
-.div3 h3 {
+.intro-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  width: 80%;
+  max-width: 1140px;
+  margin-bottom: 20px;
+  z-index: 1;
 }
-
-.div3 p {
-  padding: 10px;
-}
-
-
-
-
-
 
 /* TABLET STYLES */
 
@@ -190,18 +183,23 @@ p {
     background: rgb(107, 146, 107);
   }
 
+  main {
+    background-color: #fffde6d5;
+    /* Adjust the color as needed */
+  }
+
   .logo {
     display: flex;
     margin-left: 30px;
-    width: 250px;
+    width: 300px;
   }
 
   header {
     display: flex;
     align-items: center;
-    background-color: #0f1110e1;
+    background-color: #17351de3;
     justify-content: space-between;
-    padding-block: 1vw;
+    padding-block: 12px;
   }
 
   #menuToggler {
@@ -226,6 +224,7 @@ p {
     transition: background-color 0.5s;
     font-size: 14px;
     flex-grow: 0;
+    border: 0px;
   }
 
   .logoMobile {
@@ -249,7 +248,7 @@ p {
   }
 
   main {
-    background-color: #f0f0f0d5;
+    background-color: #fffde6d5;
     /* Adjust the color as needed */
   }
 
@@ -296,29 +295,18 @@ p {
 
   nav a:hover {
     color: #17351d;
-    background-color: rgba(255, 230, 0, 0.63);
+    background-color: rgba(0, 180, 90, 0.63);
   }
 
-
-  .css-button-neumorphic {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: #efefef;
-    box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
-    color: #585858;
-  }
-
-  .css-button-neumorphic:active {
-    box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    max-width: 1140px;
+    margin-bottom: 20px;
+    z-index: 1;
   }
 }

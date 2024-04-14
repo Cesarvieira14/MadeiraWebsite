@@ -32,5 +32,16 @@ window.addEventListener('scroll', toggleHeaderVisibility);
 
 */
 
+// JavaScript
+document.querySelector('.css-button-neumorphic').addEventListener('click', function () {
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const activitiesSection = document.getElementById('Activities');
+    const targetPosition = activitiesSection.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+    window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth' // Optional: Smooth scrolling
+    });
+});
 
 
