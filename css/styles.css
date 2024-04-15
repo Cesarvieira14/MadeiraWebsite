@@ -162,6 +162,10 @@ p {
   padding: 20px;
 }
 
+.container img {
+  object-fit: cover;
+}
+
 
 /* TABLET STYLES */
 
@@ -173,18 +177,22 @@ p {
     background: rgb(107, 146, 107);
   }
 
+  main {
+    background-color: #fffde6d5;
+  }
+
   .logo {
     display: flex;
     margin-left: 30px;
-    width: 250px;
+    width: 300px;
   }
 
   header {
     display: flex;
     align-items: center;
-    background-color: #0f1110e1;
+    background-color: #17351de3;
     justify-content: space-between;
-    padding-block: 1vw;
+    padding-block: 12px;
   }
 
   #menuToggler {
@@ -209,6 +217,7 @@ p {
     transition: background-color 0.5s;
     font-size: 14px;
     flex-grow: 0;
+    border: 0px;
   }
 
   .logoMobile {
@@ -216,8 +225,65 @@ p {
   }
 
 
-  .container {
+  .BigImage {
+    display: flex;
+    animation: kenburns-top 10s ease-in both;
+
+  }
+
+
+  @keyframes kenburns-top {
+    0% {
+      transform: scale(2) translateY(0);
+      transform-origin: 50% 16%;
+    }
+
+    100% {
+      transform: scale(1.25) translateY(-15px);
+      transform-origin: top;
+    }
+  }
+
+  .MobileImage {
     display: none;
+  }
+
+  .container img {
+    object-fit: cover;
+  }
+
+  .text-overlay {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-overlay h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    font-size: 50px;
+    color: #ffffff;
+    animation: text-pop-up-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  }
+
+  @keyframes text-pop-up-bottom {
+    0% {
+      transform: translateY(0);
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+
+    100% {
+      transform: translateY(20px);
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000, 0 6px 0 #000000, 0 7px 0 #000000, 0 8px 0 #000000, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
   }
 
 
@@ -338,8 +404,6 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
   }
 
 
