@@ -197,10 +197,13 @@ p {
 
   nav a {
     padding: 0.15em 1.25em;
+    margin: 2.5px;
     border-radius: 5vw;
     transition: background-color 0.5s;
     font-size: 14px;
     flex-grow: 0;
+    border: 0px;
+
   }
 
   .logoMobile {

@@ -340,6 +340,7 @@ p {
 
   nav a {
     padding: 0.25em 1.25em;
+    margin: 2.5px;
     border-radius: 5vw;
     transition: background-color 0.5s;
     font-size: 17px;
