@@ -14,7 +14,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background: rgb(211, 185, 185);
+  background: #fffde6d5;
   height: 100vh;
   width: 100%;
   align-content: center;
@@ -23,6 +23,7 @@ body {
 
 main {
   flex-grow: 1;
+  background-color: #fffde6d5;
 }
 
 .logoMobile {
@@ -38,26 +39,35 @@ header {
 }
 
 #target {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px)1fr);
-  gap: 2rem;
-  padding: 5rem;
+  display: flex;
+  padding: 10px 50px 50px 50px;
+  justify-content: center;
+  width: 100%;
 }
 
 article {
   background: rgb(112, 106, 106);
-  display: grid;
-  grid-template-columns: 200px auto;
-  outline: 9px groove #000000;
-  outline-offset: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
 }
 
 article div {
   padding: 1 rem;
 }
 
+article div p {
+  text-align: center;
+}
+
 img {
   width: 100%;
+}
+
+#target img {
+  border-radius: 200px;
+  margin-bottom: 20px;
 }
 
 
@@ -220,7 +230,12 @@ p {
   /* applies to screens wider than 999px */
 
   body {
-    background: rgb(255, 255, 255);
+    background: #17351d;
+  }
+
+  main {
+    background-color: #f0f0f0d5;
+    /* Adjust the color as needed */
   }
 
   #menuToggler {
@@ -234,9 +249,9 @@ p {
   header {
     display: flex;
     align-items: center;
-    background-color: #0f1110e1;
+    background-color: #17351d;
     justify-content: space-between;
-    padding-block: 1vw;
+    padding-block: 12px;
   }
 
   .logoMobile {
@@ -246,7 +261,7 @@ p {
   .logo {
     display: flex;
     margin-left: 30px;
-    max-width: 300px;
+    width: 300px;
   }
 
   nav {
@@ -260,15 +275,31 @@ p {
 
   nav a {
     padding: 0.25em 1.25em;
+    margin: 2.5px;
     border-radius: 5vw;
     transition: background-color 0.5s;
     font-size: 17px;
     flex-grow: 0;
+    border: 0px;
   }
 
   nav a:hover {
     color: #17351d;
     background-color: rgba(0, 180, 90, 0.63);
+  }
+
+  article {
+    background: rgb(112, 106, 106);
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    flex-direction: row;
+  }
+
+  #target img {
+    border-radius: 200px;
+    margin-bottom: 20px;
+    width: 200px;
   }
 
 }

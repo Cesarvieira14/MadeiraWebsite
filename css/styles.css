@@ -29,11 +29,13 @@ h2 {
 h3 {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 p {
   text-align: justify;
   padding: 20px;
+  font-size: 18px;
 }
 
 .container {
