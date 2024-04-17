@@ -51,6 +51,8 @@ article {
   flex-direction: column;
   width: 200px;
   padding: 20px;
+  border-style: solid;
+  border-color: #4d4f4f;
 }
 
 article div {
