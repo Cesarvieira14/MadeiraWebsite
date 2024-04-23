@@ -38,23 +38,31 @@ header {
   justify-content: center;
 }
 
+.Titles {
+  padding-bottom: 10px;
+}
+
+
 #target {
   display: flex;
-  padding: 10px 50px 50px 50px;
+  padding: 0 20px 20px 20px;
   justify-content: center;
   width: 100%;
 }
 
-article {
-  background: rgb(112, 106, 106);
+#target article {
+  background: rgb(112 106 106 / 35%);
   display: flex;
   flex-direction: column;
-  width: 200px;
   padding: 20px;
+  border-radius: 8px
 }
 
 article div {
-  padding: 1 rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
 }
 
 article div p {
@@ -93,7 +101,17 @@ Trying to implement menu toggler
 
 
 .container {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px 20px 40px;
+  ;
+}
+
+.container h2 {
+  padding-bottom: 10px;
+  font-weight: 300;
 }
 
 .logo {
@@ -142,18 +160,13 @@ h1 {
 
 h2 {
   text-align: center;
+  font-weight: 500;
 }
 
 p {
   text-align: justify;
   padding: 20px;
 }
-
-.container {
-  margin: 20px;
-}
-
-
 
 .footer {
   background-color: rgba(0, 0, 0, 0.336);
@@ -163,7 +176,65 @@ p {
 
 }
 
+/* Working on the contact me */
 
+
+.wrapper {
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  max-width: 800px;
+
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea {
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #17351d;
+  color: #fcfbf7;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
 
 /* TABLET STYLES */
 
@@ -218,6 +289,10 @@ p {
 
   .logoMobile {
     display: none;
+  }
+
+  #target {
+    padding: 0 40px 20px 40px;
   }
 }
 
@@ -288,10 +363,9 @@ p {
     background-color: rgba(0, 180, 90, 0.63);
   }
 
-  article {
-    background: rgb(112, 106, 106);
+  #target article {
     display: flex;
-    width: 50%;
+    width: 600px;
     padding: 20px;
     flex-direction: row;
   }
