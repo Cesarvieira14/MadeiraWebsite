@@ -8,6 +8,14 @@
   display: none;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {}
+
+
 
 .text-overlay {
   display: none;
