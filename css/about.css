@@ -167,11 +167,9 @@ p {
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.336);
+  background-color: rgba(12, 87, 23, 1);
   width: 100%;
   text-align: center;
-  color: antiquewhite;
-
 }
 
 /* Working on the contact me */
