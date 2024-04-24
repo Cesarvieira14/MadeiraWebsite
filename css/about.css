@@ -32,11 +32,6 @@ main {
 
 }
 
-header {
-  background-color: #17351d;
-  padding: 8px 0;
-  justify-content: center;
-}
 
 .Titles {
   padding-bottom: 10px;
@@ -55,7 +50,10 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border-radius: 8px
+  border-radius: 8px;
+  align-items: center;
+  max-width: 600px;
+
 }
 
 article div {
@@ -236,14 +234,31 @@ p {
   transition: all 0.5s ease;
 }
 
+@media screen and (min-width: 400px) {
+  #target img {
+    width: 200px;
+  }
+}
+
+
 /* TABLET STYLES */
 
-@media screen and (min-width: 500px) {
+
+@media screen and (min-width: 700px) {
 
   /* applies to screens wider than 499px */
 
   body {
-    background: rgb(2, 75, 2);
+    background: rgb(107, 146, 107);
+  }
+
+  main {
+    background-color: #fffde6d5;
+    /* Adjust the color as needed */
+  }
+
+  #menuToggler {
+    display: none;
   }
 
   .logo {
@@ -255,9 +270,9 @@ p {
   header {
     display: flex;
     align-items: center;
-    background-color: #0f1110e1;
+    background-color: #17351de3;
     justify-content: space-between;
-    padding-block: 1vw;
+    padding-block: 12px;
   }
 
   #menuToggler {
@@ -294,6 +309,10 @@ p {
   #target {
     padding: 0 40px 20px 40px;
   }
+
+  img {
+    width: 50%;
+  }
 }
 
 
@@ -309,7 +328,7 @@ p {
   }
 
   main {
-    background-color: #f0f0f0d5;
+    background-color: #fffde6d5;
     /* Adjust the color as needed */
   }
 
