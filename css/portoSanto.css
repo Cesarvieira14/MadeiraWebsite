@@ -3,6 +3,11 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
+main {
+  padding-top: 0px;
+  background-color: #f0f0f0d5;
+
+}
 
 .BigImage {
   display: none;
@@ -15,10 +20,35 @@
 
 .video-container iframe {}
 
-
+header {
+  background-color: #1c1f1dc5;
+}
 
 .text-overlay {
-  display: none;
+  /* Positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  /* Color */
+  color: #ffef62d5;
+
+  /* Text */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 32px;
+}
+
+.text-overlay p {
+  font-size: 19px;
 }
 
 h1 {
@@ -40,7 +70,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 116px);
+  height: 100vh;
   /* Adjust according to your header height */
   overflow: hidden;
   /* Ensure the image doesn't overflow the container */
@@ -54,7 +84,7 @@ p {
   /* Ensure the image doesn't exceed the container width */
   min-height: 100%;
   /* Ensure the image doesn't exceed the container height */
-  object-fit: fill;
+  object-fit: cover;
   /* Maintain aspect ratio while fitting inside the container */
 
 }
@@ -127,7 +157,9 @@ p {
   border-radius: 14px;
 }
 
-
+footer {
+  background-color: #00000000;
+}
 
 
 /* TABLET STYLES */
@@ -140,18 +172,26 @@ p {
     background: rgb(107, 146, 107);
   }
 
+  main {
+    background-color: #fffde6d5;
+  }
+
   .logo {
     display: flex;
     margin-left: 30px;
-    width: 250px;
+    width: 300px;
   }
 
   header {
     display: flex;
     align-items: center;
-    background-color: #0f1110e1;
+    background-color: #1c1f1dc5;
     justify-content: space-between;
-    padding-block: 1vw;
+    padding-block: 12px;
+  }
+
+  .MobileImage {
+    display: none;
   }
 
   #menuToggler {
@@ -172,22 +212,29 @@ p {
 
   nav a {
     padding: 0.15em 1.25em;
+    margin: 2.5px;
     border-radius: 5vw;
     transition: background-color 0.5s;
     font-size: 14px;
     flex-grow: 0;
+    border: 0px;
   }
 
   .logoMobile {
     display: none;
   }
 
-
-  .container {
-    display: none;
+  .BigImage {
+    display: flex;
   }
 
+  .container img {
+    object-fit: cover;
+  }
 
+  .text-overlay {
+    width: 100%;
+  }
 }
 
 
@@ -204,7 +251,11 @@ p {
 
   main {
     background-color: #f0f0f0d5;
+
     /* Adjust the color as needed */
+    flex-grow: 1;
+    position: relative;
+    padding-top: 0px;
   }
 
   #menuToggler {
@@ -259,12 +310,10 @@ p {
     justify-content: center;
     align-items: center;
     max-width: auto;
-    height: calc(100vh-121px);
+    height: 100vh;
   }
 
-  .container img {
-    object-fit: fill;
-  }
+
 
   .BigImage {
     display: flex;
