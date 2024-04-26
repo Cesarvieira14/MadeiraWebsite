@@ -46,6 +46,7 @@ For the development of this project, the following tutorials and guides were use
 - **FLEXBOX FROGGY**: [FLEXBOX FROGGY](https://flexboxfroggy.com/)
 - **CSS Flexbox Guide**: [A Complete Guide to Flexbox by CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - **GeeksforGeeks**: [Create a Contact Form using HTML CSS & JavaScript](https://www.geeksforgeeks.org/create-a-contact-form-using-html-css-javascript/)
+- **Animista**: [Animations](https://animista.net/)
 
 ### Images and Videos
 
