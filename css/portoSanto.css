@@ -3,11 +3,16 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
+body {
+  background-color: #f0f0f0d5;
+}
+
 main {
   padding-top: 0px;
-  background-color: #f0f0f0d5;
+  background-color: #b0b0b0d5;
 
 }
+
 
 .BigImage {
   display: none;
@@ -52,7 +57,7 @@ h2 {
 }
 
 p {
-  text-align: justify;
+  text-align: center;
   padding: 20px;
 }
 
@@ -90,6 +95,8 @@ p {
 .video-container h1 {
   font-weight: 200;
   font-size: 30px;
+  color: rgb(228, 228, 228);
+
 }
 
 .video-container h2 {
@@ -104,9 +111,67 @@ p {
   aspect-ratio: 16 / 9;
 }
 
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Ensures three columns regardless of screen size */
+  gap: 20px;
+  padding: 20px;
+}
 
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
 
+.responsive-img:hover {
+  transform: scale(1.05);
+}
 
+.porto-santo-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.porto-santo-intro h1 {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(228, 228, 228);
+
+}
+
+.porto-santo-intro h1 {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(228, 228, 228);
+}
+
+.gallery-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-intro h2 {
+  font-weight: 500;
+  font-size: 19px;
+  color: rgb(228, 228, 228);
+
+}
+
+.footer {
+  background-color: #252121b4;
+}
 
 /* TABLET STYLES */
 
@@ -115,11 +180,11 @@ p {
   /* applies to screens wider than 499px */
 
   body {
-    background: rgb(107, 146, 107);
+    background: #f0f0f0d5;
   }
 
   main {
-    background-color: #fffde6d5;
+    background-color: #b0b0b0d5;
   }
 
   .logo {
@@ -181,8 +246,25 @@ p {
   .text-overlay {
     width: 100%;
   }
-}
 
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container iframe {
+    padding: 0 50px 50px;
+    ;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+}
 
 
 /* DESKTOP STYLES */
@@ -196,7 +278,7 @@ p {
   }
 
   main {
-    background-color: #f0f0f0d5;
+    background-color: #b0b0b0d5;
 
     /* Adjust the color as needed */
     flex-grow: 1;
@@ -275,9 +357,45 @@ p {
     align-items: center;
   }
 
+  .video-container {
+    padding-bottom: 0px;
+  }
 
+  .video-container h1 {
+    font-weight: 200;
+    font-size: 40px;
+  }
 
+  .video-container h2 {
+    font-weight: 100;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
 
+  .video-container iframe {
+    height: 515px;
+    width: 916px;
+  }
 
+  .porto-santo-intro {
+    padding-inline: 200px;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 0 100px 20px;
+  }
+
+  .responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .responsive-img:hover {
+    transform: scale(1.05);
+  }
 
 }
