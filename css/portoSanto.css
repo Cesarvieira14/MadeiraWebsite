@@ -18,6 +18,7 @@ main {
   display: none;
 }
 
+/* Header styles, set a darker background for visibility */
 header {
   background-color: #1c1f1dc5;
 }
@@ -25,51 +26,50 @@ header {
 .text-overlay {
   /* Positioning */
   position: absolute;
+  /* Ensures overlay is above the image */
   z-index: 1;
-
   /* Display & Box Model */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-
-  /* Color */
+  /* Light yellow text for contrast */
   color: #ffef62d5;
-
   /* Text */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 32px;
 }
 
+/* Styling for paragraphs within the text overlay */
 .text-overlay p {
   font-size: 19px;
   display: flex;
   justify-content: center;
 }
 
-h1 {
-  text-align: center;
-}
-
+/* Center align all header tags */
+h1,
 h2 {
   text-align: center;
 }
 
+/* General paragraph styles */
 p {
   text-align: center;
   padding: 20px;
 }
 
+/* Container for hero images, making it responsive */
 .container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Full viewport height */
   height: 100vh;
-  /* Adjust according to your header height */
+  /* Hide anything outside the container */
   overflow: hidden;
-  /* Ensure the image doesn't overflow the container */
   margin-bottom: 50px;
 
 }
@@ -90,6 +90,11 @@ p {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 50px;
+}
+
+/* Remove iframe border */
+.video-container iframe {
+  border: 0;
 }
 
 .video-container h1 {
@@ -123,10 +128,12 @@ p {
   width: 100%;
   height: auto;
   display: block;
+  /* Smooth scaling on hover */
   transition: transform 0.3s ease;
 }
 
 .responsive-img:hover {
+  /* Scale up image on hover */
   transform: scale(1.05);
 }
 
@@ -142,12 +149,6 @@ p {
   font-size: 20px;
   color: rgb(228, 228, 228);
 
-}
-
-.porto-santo-intro h1 {
-  font-weight: 500;
-  font-size: 20px;
-  color: rgb(228, 228, 228);
 }
 
 .gallery-intro {
@@ -177,7 +178,7 @@ p {
 
 @media screen and (min-width: 700px) {
 
-  /* applies to screens wider than 499px */
+  /* Adjustments for devices wider than 700px */
 
   body {
     background: #f0f0f0d5;
