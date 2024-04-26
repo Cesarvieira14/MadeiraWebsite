@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/GGwkV7WK)
 # CTEC3905 Assignment
 
-This repository is part of the Front-end Web Development course at De Montfort University. It includes basic boilerplate code to kickstart the development of a responsive and accessible website.
+This repository is part of the Front-end Web Development course at De Montfort University.
 
 ## Project Overview
 Objective: The main goal of "Uncover Madeira" is to showcase the beauty and uniqueness of Madeira Island, enhancing its visibility as a prime tourist destination. This project is designed to demonstrate proficiency in HTML, CSS, and JavaScript by building a responsive and accessible website that provides a comprehensive and engaging experience for visitors.
