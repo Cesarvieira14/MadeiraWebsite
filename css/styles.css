@@ -192,7 +192,7 @@ p {
 
 @media screen and (min-width: 700px) {
 
-  /* applies to screens wider than 499px */
+  /* applies to screens wider than 699px */
 
   body {
     background: rgb(107, 146, 107);

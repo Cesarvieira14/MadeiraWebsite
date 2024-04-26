@@ -77,12 +77,8 @@ p {
 .container img {
   scale: 1;
   min-width: 100%;
-  /* Ensure the image doesn't exceed the container width */
   min-height: 100%;
-  /* Ensure the image doesn't exceed the container height */
   object-fit: cover;
-  /* Maintain aspect ratio while fitting inside the container */
-
 }
 
 .video-container {
@@ -119,7 +115,6 @@ p {
 .image-gallery {
   display: grid;
   grid-template-columns: 1fr;
-  /* Ensures three columns regardless of screen size */
   gap: 20px;
   padding: 20px;
 }
