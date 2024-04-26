@@ -4,7 +4,9 @@
 This repository is part of the Front-end Web Development course at De Montfort University. It includes basic boilerplate code to kickstart the development of a responsive and accessible website.
 
 ## Project Overview
-This project is designed to demonstrate proficiency in HTML, CSS, and JavaScript by building a responsive and accessible website.
+Objective: The main goal of "Uncover Madeira" is to showcase the beauty and uniqueness of Madeira Island, enhancing its visibility as a prime tourist destination. This project is designed to demonstrate proficiency in HTML, CSS, and JavaScript by building a responsive and accessible website that provides a comprehensive and engaging experience for visitors.
+
+Target Audience: Tourists planning to visit Madeira and travel enthusiasts in exploring more about the island.
 
 ## Structure
 
