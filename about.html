@@ -7,20 +7,24 @@
   <title>Uncover Madeira</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/about.css">
+  <!-- Website favicon -->
   <link rel="shortcut icon" href="images/uncover-madeira-favicon-color.png" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <div class="logos">
+      <!-- Logo link back to homepage -->
       <a href="index.html" id="logo-link">
         <img src="images/Logo_icon_right.png" alt="Uncover Madeira" class="logo">
         <img src="images/logobasic.png" alt="Uncover Madeira" class="logoMobile">
       </a>
     </div>
+    <!-- Hamburger menu for mobile devices -->
     <div id="menuToggler">&#8801;</div>
     <div>
       <nav id="menu">
+        <!-- Navigation links -->
         <a href="index.html">Home</a>
         <a href="activities.html">Activities</a>
         <a href="portoSanto.html">Porto Santo</a>
@@ -29,18 +33,22 @@
     </div>
   </header>
   <main>
+    <!-- Page title and subtitle -->
     <div class="Titles">
       <h1>About</h1>
       <h2>Webpage created by:</h2>
     </div>
+    <!-- Target container for dynamic content -->
     <div id="target">
     </div>
     <div class="container">
       <h2>Contact Me</h2>
       <div class="wrapper">
+        <!-- Area to display form error messages -->
         <div id="error_message">
         </div>
-        <form action="" id="myform" onsubmit="return validate();">
+        <!-- Contact form with validation on submit -->
+        <form id="myform" onsubmit="return validate();">
           <div class="input_field">
             <input type="text" placeholder="Name" id="name">
           </div>
@@ -67,6 +75,7 @@
     Made by P2653383 for CTEC3905: Front-end Web Development
   </footer>
   <script src="js/scripts.js"></script>
+  <!-- Module script for handling GitHub API interactions -->
   <script type="module" src="js/github.js"></script>
   <script src="js/contact.js"></script>
 
