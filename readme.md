@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/GGwkV7WK)
 # CTEC3905 Assignment
 
-This repository contains basic boilerplate code for you to get started with.
+This repository is part of the Front-end Web Development course at De Montfort University. It includes basic boilerplate code to kickstart the development of a responsive and accessible website.
 
 You will need to replace the contents of these files with your own code.
 
