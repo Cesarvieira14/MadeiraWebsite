@@ -58,16 +58,23 @@ For the development of this project, the following tutorials and guides were use
 
 #### activities.html
 - Activities Head Video: [Pexels](https://www.pexels.com/video/people-on-steep-street-on-madeira-13107456/)
-- Activity1
-- Activity2
-- Activity3
-- Activity4
-- Activity5
-- Activity6
-- Activity7
-- Activity8
-- Activity9
+- Activity1 Image: [Unsplash](https://visitmadeira.com/en/what-to-do/experiencing-the-city-of-funchal/touring-the-city/funchal-cable-car/)
+- Activity2 Image: [Unsplash](https://unsplash.com/photos/assorted-fruits-on-display-JI5VdAD2mAo)
+- Activity3 Image: [Unsplash](https://unsplash.com/photos/an-aerial-view-of-a-waterfall-in-the-middle-of-the-ocean-oof6YZF6rF8)
+- Activity4 Image: [Unsplash](https://unsplash.com/pt-br/fotografias/um-pequeno-rio-em-uma-floresta-NOwSuTDIboY)
+- Activity5 Image: [Unsplash](https://unsplash.com/pt-br/fotografias/uma-ponte-vermelha-sobre-um-pequeno-lago-em-um-parque-qjXQcIzVyw)
+- Activity6 Image: [Unsplash](https://unsplash.com/pt-br/fotografias/um-edificio-amarelo-com-uma-luz-de-rua-ao-lado-ya3WERsyH_U)
+- Activity7 Image: [Unsplash](https://d3rh2tj1l6igzv.cloudfront.net/uploads/2021/07/toboggan-basket-madeira.jp)
+- Activity8 Image: [Unsplash](https://unsplash.com/pt-br/fotografias/fotografia-de-gray-e-brown-mountain-durante-o-dia-N4E1P6id18I)
+- Activity9 Image: [Unsplash](https://unsplash.com/pt-br/fotografias/um-grupo-de-barcos-flutuando-em-cima-de-um-corpo-de-agua-_L1_IiyWizs)
 
 #### portoSanto.html
-- *Porto Santo Map*: Provided by [Pixabay](https://pixabay.com/vectors/map-island-porto-santo-geography-30764/) under Creative Commons License
-- *Wildlife Documentary Snippet*: From 'Wildlife of Porto Santo', produced by Nature Watch, available on [YouTube](https://youtube.com/watchexample)
+- Porto Santo Head Image: [Unsplash](https://unsplash.com/photos/a-boat-on-a-body-of-water-uAAZj8zhQUg)
+- Porto Santo Head Image(Mobile): [Unsplash](https://unsplash.com/photos/brown-rocky-mountain-beside-body-of-water-during-daytime-b9voIvyzUAs)
+- Porto Santo Video(Visit Madeira): [Youtube](https://www.youtube.com/watch?v=l0oBkH3Iz7Q)
+- Porto Santo Gallery Image 1: [Unsplash](https://unsplash.com/photos/a-beach-with-waves-coming-in-to-the-shore-Mjj9HnDc20s)
+- Porto Santo Gallery Image 2: [Unsplash](https://unsplash.com/photos/black-labrador-retriever-on-seashore-during-daytime-0J8J7CqKQfw)
+- Porto Santo Gallery Image 3: [Unsplash](https://unsplash.com/photos/man-in-blue-shirt-and-black-shorts-standing-on-rock-formation-near-ocean-waves-during-daytime-Aev37Xe5YXc)
+- Porto Santo Gallery Image 4: [Unsplash](https://unsplash.com/photos/people-walking-on-sidewalk-near-sea-during-daytime-lYyw4Xi_riQ)
+- Porto Santo Gallery Image 5: [Unsplash](https://unsplash.com/photos/white-and-brown-concrete-statue-qzu7kqjqeqQ)
+- Porto Santo Gallery Image 6: [Unsplash](https://unsplash.com/photos/a-man-walking-down-a-pier-holding-a-surfboard-uLsZg5lAs7Y)
