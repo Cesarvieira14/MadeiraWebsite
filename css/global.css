@@ -113,14 +113,6 @@ nav a {
     border: 1px solid #ffffff38;
 }
 
-/*  CHECK if hover is necessary in mobile
-  
-  
-  nav a:hover {
-    color: #17351d;
-    background-color: #afa;
-  }
-  */
 .footer {
     background-color: rgba(0, 0, 0, 0.336);
     width: 100%;
